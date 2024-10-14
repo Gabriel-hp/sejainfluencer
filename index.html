@@ -60,14 +60,15 @@
                 <source src="/video/O UM VIDEO HORIZONTAL.MP4" type="video/mp4">
                 Seu navegador não suporta a tag de vídeo.
             </video>
-            <section class="promo-banner">
+            <div class="promo-banner">
                 <div class="promo-content">
                     <p class="old-price2">De R$500,00</p>
-                    <h1 class="new-price2">POR APENAS 12x de R$19,00!</h1>
+                    <h1 class="new-price2">POR 12x de R$19,00!</h1>
                 </div>
-            </section>
+            </div>
             
-            <button class="primary-btn">Tenha acesso a comunidade Agora!</button>
+            <button class="primary-btn-video">Tenha acesso a comunidade Agora!</button>
+
         </div>
 
     </section>
@@ -134,39 +135,45 @@
 
     <section class="feedback">
         <div class="container-feedback">
-            
             <div class="text-top wow animate__animated animate__fadeInDown" data-wow-duration="2s">
                 <h1>Feed<span class="highlight"><b>Backs</b></span></h1>
             </div>
             <div class="feedback-grid">
     
-                <div class="feedback-item wow animate__animated animate__zoomIn" data-wow-delay="0.2s" data-wow-duration="2s">
-                    <img src="./img/feedback/1.png" alt="Feedback 1">
+                <!-- Estrutura do lightbox -->
+                <div id="lightbox" class="lightbox">
+                    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+                    <img class="lightbox-image" id="lightbox-img" src="" alt="Imagem em tamanho real">
                 </div>
-                <div class="feedback-item wow animate__animated animate__zoomIn" data-wow-delay="0.4s" data-wow-duration="2s">
-                    <img src="./img/feedback//2.jpeg" alt="Feedback 2">
+    
+                <!-- Feedback Items com lightbox -->
+                <div class="feedback-item">
+                    <img src="/img/feedback/1.png" alt="Feedback 1" onclick="openLightbox(this.src)">
                 </div>
-                <div class="feedback-item wow animate__animated animate__zoomIn" data-wow-delay="0.6s" data-wow-duration="2s">
-                    <img src="./img/feedback/3.png" alt="Feedback 3">
+                <div class="feedback-item">
+                    <img src="/img/feedback/2.jpeg" alt="Feedback 2" onclick="openLightbox(this.src)">
                 </div>
-                <div class="feedback-item wow animate__animated animate__zoomIn" data-wow-delay="0.8s" data-wow-duration="2s">
-                    <img src="./img/feedback/4.png" alt="Feedback 4">
+                <div class="feedback-item">
+                    <img src="/img/feedback/3.png" alt="Feedback 3" onclick="openLightbox(this.src)">
                 </div>
-                <div class="feedback-item wow animate__animated animate__zoomIn" data-wow-delay="1s" data-wow-duration="2s">
-                    <img src="./img/feedback/5.png" alt="Feedback 5">
+                <div class="feedback-item">
+                    <img src="/img/feedback/4.png" alt="Feedback 4" onclick="openLightbox(this.src)">
                 </div>
-                <div class="feedback-item wow animate__animated animate__zoomIn" data-wow-delay="1.2s" data-wow-duration="2s">
-                    <img src="./img/feedback/6.png" alt="Feedback 6">
+                <div class="feedback-item">
+                    <img src="/img/feedback/5.png" alt="Feedback 5" onclick="openLightbox(this.src)">
                 </div>
-                <div class="feedback-item wow animate__animated animate__zoomIn" data-wow-delay="1.4s" data-wow-duration="2s">
-                    <img src="./img/feedback/7.png" alt="Feedback 7">
+                <div class="feedback-item">
+                    <img src="/img/feedback/6.png" alt="Feedback 6" onclick="openLightbox(this.src)">
                 </div>
-
+                <div class="feedback-item">
+                    <img src="/img/feedback/7.png" alt="Feedback 7" onclick="openLightbox(this.src)">
+                </div>
+    
             </div>
             <button class="secondary-btn"><a href="#">Nosso instagram</a></button>
-       
         </div>
     </section>
+    
     
 
     <section class="promocao">
@@ -176,26 +183,37 @@
                 <p>Escolha o plano que mais se encaixa no seu orçamento</p>
             </div>
             <div class="content-pri">
+                
+                <div class="content-planos">
+                    <div class="pricing-card wow animate__animated animate__zoomIn" data-wow-delay="0.6s" data-wow-duration="2s">
+                        <h2 class="plan-title">Comunidade de influencer</h2>
+                        <p class="price-old">DE <span class="strikethrough">R$83,79</span></p>
+                        <p class="price-new">POR <span>R$34,99</span></p>
+                        <button class="plan-button">EU QUERO ESSE PLANO</button>
+                        <p class="vantagens"><span class="material-symbols-outlined">check</span>Acesso a comunidade por 3 meses</p>
+                        <p class="vantagens"><span class="material-symbols-outlined">check</span>Oficinas de edição de vídeo móvel</p>
+                        <p class="vantagens"><span class="material-symbols-outlined">check</span> Aulas ao vivo semanais</p>
+                        <p class="vantagens"><span class="material-symbols-outlined">check</span>Workshop de empreendedorismo</p>                    
+                    </div>
+                </div>
+                
                 <div class="content-planos">
                     <div class="pricing-card wow animate__animated animate__zoomIn" data-wow-delay="0.3s" data-wow-duration="2s">
-                        <h2 class="plan-title">Comunidade</h2>
+                        <h2 class="plan-title">Curso Seja influencer</h2>
                         <p class="price-old">DE <span class="strikethrough">R$500,00 </span>por</p>
                         <p class="price-new">10x<span> de 19,00</span></p>
                         <button class="plan-button">EU QUERO ESSE PLANO</button>
-                        <p class="vantagens"><span class="material-symbols-outlined">check</span>Acesso ao grupo de networking</p>
-                        <p class="vantagens"><span class="material-symbols-outlined">check</span> Aulas ao vivo semanais</p>
-                        <p class="vantagens"><span class="material-symbols-outlined">check</span>Workshop de empreendedorismo</p>
-                        <p class="vantagens"><span class="material-symbols-outlined">check</span>Oficinas de edição de vídeo móvel</p>
-                    </div>
-                </div>
-                <div class="content-planos">
-                    <div class="pricing-card wow animate__animated animate__zoomIn" data-wow-delay="0.6s" data-wow-duration="2s">
-                        <h2 class="plan-title">Curso</h2>
-                        <p class="price-old">DE <span class="strikethrough">R$83,79</span></p>
-                        <p class="price-new">POR <span>R$75,90</span></p>
-                        <button class="plan-button">EU QUERO ESSE PLANO</button>
-                        <p class="vantagens"><span class="material-symbols-outlined">check</span>Oficinas de edição de vídeo móvel</p>
-                    </div>
+                        <p class="vantagens">Inclui tudo o que o plano Comunidade oferece e muito mais:</p>
+                        <p class="vantagens"><span class="material-symbols-outlined">check</span>Acesso vitalício ao curso completo</p>
+                        <p class="vantagens"><span class="material-symbols-outlined">check</span>7 módulos com conteúdos exclusivos</p>
+                        <p class="vantagens"><span class="material-symbols-outlined">check</span>Networking para expandir suas conexões</p>
+                        <p class="vantagens"><span class="material-symbols-outlined">check</span>Estratégias de algoritmos para aumentar seu alcance</p>
+                        <p class="vantagens"><span class="material-symbols-outlined">check</span> Técnicas de tráfego pago para impulsionar suas campanhas</p>
+                        <p class="vantagens"><span class="material-symbols-outlined">check</span>Dicas para vender mais e estratégias de marketing avançadas</p>
+
+
+
+                        </div>
                 </div>
             </div>
         </div>
