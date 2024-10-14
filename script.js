@@ -81,6 +81,34 @@ function startCountdown(hours, minutes, seconds) {
 // Inicia o contador com 2 horas, 49 minutos e 0 segundos
 startCountdown(2, 49, 0);
 
+//feedback
+// Função para abrir o lightbox
+function openLightbox(imgSrc) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.src = imgSrc; // Define a imagem no lightbox
+    lightbox.style.display = 'flex'; // Exibe o lightbox
+}
 
+// Função para fechar o lightbox
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none'; // Oculta o lightbox
+}
+
+// Fechar o lightbox ao clicar fora da imagem
+document.getElementById('lightbox').addEventListener('click', function (event) {
+    // Se o clique for fora da imagem, fecha o lightbox
+    if (event.target === this) {
+        closeLightbox();
+    }
+});
+
+// Fechar o lightbox ao pressionar a tecla "Esc"
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        closeLightbox();
+    }
+});
 
 
