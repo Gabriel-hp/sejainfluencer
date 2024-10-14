@@ -39,7 +39,7 @@ body, html {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: url('./img/bg/bg-seja-influenceraa.png') no-repeat center center;
+    background: url('/img/bg/bg-seja-influenceraa.png') no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -68,12 +68,15 @@ body, html {
     align-items: center;
     padding: 20px;
 }
-.hero-character img{
+.hero-character img {
     position: absolute;
-    width: 640px !important;
-    margin-left: -300px;
-    margin-top: -250px !important;
+    width: 25vw; /* Tamanho da imagem ajustado de forma responsiva */
+    left: 100%; /* Centraliza horizontalmente */
+    top: 62%; /* Centraliza verticalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para ficar centralizado */
+    z-index: 2; /* Garante que a imagem esteja acima de outros elementos */
 }
+
 
 .text-container {
     max-width: 50%;
@@ -147,12 +150,13 @@ body, html {
 
 .section video{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
 }
 
 .content-video .video-player{
     width: 750px;
     border-radius: 20px;
+    margin-top: -20px;
 }
 .content-video{
     display: flex;
@@ -160,10 +164,6 @@ body, html {
     align-items: center;
 }
 
-.content-video img{
-    margin-bottom: 20px;
-    border-radius: 20px;
-}
 
 .video{
     display: flex;
@@ -177,6 +177,7 @@ body, html {
 
 .promo-content {
     display: inline-block;
+    margin: -5px;
 }
 
 .old-price2 {
@@ -186,12 +187,29 @@ body, html {
 }
 
 .new-price2 {
-    background-color: yellow; /* Cor de fundo da nova */
-    color: black; /* Cor do texto da nova */
+    color: #00cc7a; /* Cor do texto da nova */
     font-size: 30px; /* Tamanho da fonte da nova */
-    padding: 10px; /* Espaçamento interno */
+    margin-top: -20px;
 }
 
+
+.primary-btn-video{
+    padding: 15px 35px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+        background-color: #3DEEA1; /* Cor verde do botão */
+        color: #2B2B2B;
+        font-weight: bold;
+        transition: .5s;
+        margin-bottom: 50px;
+    }
+    .primary-btn-video:hover {
+        background-color: #26bd7c; /* Cor verde do botão */
+        box-shadow: 0 0 20px rgba(27, 223, 37, 0.7);
+    }
 
 /*emocional*/
 /* Seção container */
@@ -221,9 +239,8 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('./img/bg/bg-seja-influencer-manaus.jpg') no-repeat center;
-    background-size: cover; 
-    opacity: 0.3; 
+    background: url('./img/bg/bg-influencer-manaus.png') no-repeat left;
+    opacity: 0.2; 
     z-index: 1; 
 }
 
@@ -274,17 +291,35 @@ body, html {
     z-index: 1;
 }
 
-.container-feedback::before {
-    content: '';
-    position: absolute;
+
+/* Estilos do lightbox */
+.lightbox {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('./img/bg/bg-grupo-influencer.png') no-repeat center center;
-    background-size: cover; 
-    z-index: 1; 
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
 }
+
+.lightbox-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 
 .feedback-grid {
     display: grid;
@@ -433,8 +468,8 @@ section .promocao{
     background-color: #26262600; /* Cor de fundo do card */
     border: 1px solid #00ff99; /* Borda verde */
     border-radius: 20px;
-    width: 270px;
-    height: 320px;
+    width: 300px;
+    height: 480px;
     padding: 20px;
     text-align: center;
     cursor: pointer;
@@ -588,6 +623,7 @@ section .faq{
     .primary-btn, .secondary-btn {
         padding: 10px 25px; 
         font-size: 35px; 
+
     }
 
     /*video*/
@@ -784,7 +820,7 @@ section .faq{
           line-height: 1.4; 
           width: 310px;
           font-weight: bold;
-          color: #0d0d0d;
+          color: #c0c0c0;
           
           
       }
@@ -793,13 +829,13 @@ section .faq{
           font-size: 18px; 
           line-height: 1.5; 
           width: 310px;
-          color: #0d0d0d;
+          color: #bdbdbd;
           font-weight: bold;
       }
 
       .container {
-        background-image: url(./img/bg/bg-responsivo-seja-influencer.png);
-    background-size: cover; 
+        background-image: url(./img/bg/bg-influencer-manaus.png) left;
+         background-size: cover; 
     }
   
 
