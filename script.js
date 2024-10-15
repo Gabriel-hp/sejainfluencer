@@ -112,24 +112,4 @@ document.addEventListener('keydown', function (event) {
 });
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const videoSection = document.getElementById('video-section');
-    const video = document.getElementById('video-player');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Iniciar o vídeo com som e loop ao tornar a seção visível
-                video.play().catch(error => {
-                    console.log('Autoplay falhou devido a restrições do navegador:', error);
-                });
-            } else {
-                // Pausar o vídeo se a seção não estiver visível
-                video.pause();
-            }
-        });
-    }, { threshold: 0.5 }); // Ativa quando 50% da seção estiver visível
-
-    observer.observe(videoSection);
-});
 
