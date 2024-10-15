@@ -15,10 +15,10 @@
 <body>
 
     <div class="limited-offer-header">
-        
-            <span>Atenção: Oferta <span class="highlight">LIMITADA</span>, válida por apenas 
-            <span id="time-remaining"></span> restantes...</span>
-
+            <p>
+                <span>Atenção: Oferta <span class="highlight">LIMITADA</span>, válida por apenas 
+                <span id="time-remaining"></span> restantes...</span>
+            </p>
         
     </div>
 
@@ -36,8 +36,8 @@
                         E o melhor tendo pouco seguidores
                     </p>
                     <div class="buttons wow animate__animated animate__fadeInUp" data-wow-delay="1.2s" data-wow-duration="2s">
-                        <button class="primary-btn">Tenha acesso ao curso agora</button>
-                        <button class="secondary-btn">Fale conosco no WhatsApp</button>
+                        <a href="#" target="_blank"><button class="primary-btn">Tenha acesso ao curso agora</button></a>
+                       <a href="https://wa.me/5592981339133?text=Olá%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20comunidade%20seja%20influencer." target="_blank"> <button class="secondary-btn">Fale conosco no WhatsApp</button></a>
                     </div>
                 </div>
                 <div class="hero-character" >
@@ -55,11 +55,14 @@
             <p>Participe da nossa comunidade e seja uma <span class="highlight">Influencer</span> de muito sucesso</p>
         </div>
 
-        <div class="content-video">
-            <video class="video-player wow animate__animated animate__fadeIn" data-wow-duration="2s" controls>
+        <div class="content-video" style="position: relative;">
+            <video id="video-player" class="video-player wow animate__animated animate__fadeIn" data-wow-duration="2s" controls muted>
                 <source src="./video/O UM VIDEO HORIZONTAL.MP4" type="video/mp4">
                 Seu navegador não suporta a tag de vídeo.
             </video>
+            <div id="sound-message" class="sound-message" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.7); color: white; padding: 20px; border-radius: 10px; text-align: center;">
+                Clique no vídeo para ativar o som
+            </div>
             <div class="promo-banner">
                 <div class="promo-content">
                     <p class="old-price2">De R$500,00</p>
@@ -67,9 +70,10 @@
                 </div>
             </div>
             
-            <button class="primary-btn-video">Tenha acesso a comunidade</button>
-
+            <a href="#"><button class="primary-btn-video">Tenha acesso a comunidade</button></a>
         </div>
+        
+        
 
     </section>
 
@@ -125,7 +129,9 @@
                         <li>Grupo de vantagens</li>
                         <li>Encontros, Eventos de celebração, Competições e muitos prêmios</li>
                     </ul>
+                   <a href="#" target="_blank">
                     <button class="primary-btn wow animate__animated animate__pulse" data-wow-delay="0.7s" data-wow-duration="2s">Tenha acesso agora</button>
+                   </a>
                 </div>
             </div>
         </div>
@@ -170,7 +176,9 @@
                 </div>
     
             </div>
-            <button class="secondary-btn"><a href="#">Nosso instagram</a></button>
+            <a href="https://www.instagram.com/luizmarcoficial/" target="_blank">
+                <button class="secondary-btn"><a href="#">Nosso instagram</a></button>
+            </a>
         </div>
     </section>
     
@@ -188,12 +196,16 @@
                     <div class="pricing-card wow animate__animated animate__zoomIn" data-wow-delay="0.6s" data-wow-duration="2s">
                         <h2 class="plan-title">Comunidade de influencer</h2>
                         <p class="price-old">DE <span class="strikethrough">R$83,79</span></p>
-                        <p class="price-new">POR <span>R$34,99</span></p>
-                        <button class="plan-button">EU QUERO ESSE PLANO</button>
-                        <p class="vantagens"><span class="material-symbols-outlined">check</span>Acesso a comunidade por 3 meses</p>
+                        <p class="price-new">POR <span>R$35,00</span></p>
+                        <a href="#">
+                            <button class="plan-button">EU QUERO ESSE PLANO</button>
+                        </a> 
+                        <p class="vantagens"><span class="material-symbols-outlined">check</span>Acesso a comunidade por 1 mês</p>
                         <p class="vantagens"><span class="material-symbols-outlined">check</span>Oficinas de edição de vídeo móvel</p>
                         <p class="vantagens"><span class="material-symbols-outlined">check</span> Aulas ao vivo semanais</p>
-                        <p class="vantagens"><span class="material-symbols-outlined">check</span>Workshop de empreendedorismo</p>                    
+                        <p class="vantagens"><span class="material-symbols-outlined">check</span>Workshop de empreendedorismo</p>   
+                        <p class="vantagens"><span class="material-symbols-outlined">check</span>Grupo de Networking</p>   
+
                     </div>
                 </div>
                 
@@ -202,14 +214,18 @@
                         <h2 class="plan-title">Curso Seja influencer</h2>
                         <p class="price-old">DE <span class="strikethrough">R$500,00 </span>por</p>
                         <p class="price-new">10x<span> de 19,00</span></p>
-                        <button class="plan-button">EU QUERO ESSE PLANO</button>
+                        <a href="#">
+                            <button class="plan-button">EU QUERO ESSE PLANO</button>
+                        </a> 
                         <p class="vantagens">Inclui tudo o que o plano Comunidade oferece e muito mais:</p>
                         <p class="vantagens"><span class="material-symbols-outlined">check</span>Acesso vitalício ao curso completo</p>
                         <p class="vantagens"><span class="material-symbols-outlined">check</span>7 módulos com conteúdos exclusivos</p>
-                        <p class="vantagens"><span class="material-symbols-outlined">check</span>Networking para expandir suas conexões</p>
                         <p class="vantagens"><span class="material-symbols-outlined">check</span>Estratégias de algoritmos para aumentar seu alcance</p>
                         <p class="vantagens"><span class="material-symbols-outlined">check</span> Técnicas de tráfego pago para impulsionar suas campanhas</p>
+                        <p class="vantagens"><span class="material-symbols-outlined">check</span>Acesso a comunidad seja influencer por 3 meses</p>
                         <p class="vantagens"><span class="material-symbols-outlined">check</span>Dicas para vender mais e estratégias de marketing avançadas</p>
+                        <p class="vantagens"><span class="material-symbols-outlined">check</span>Como definir o preço ideal para seus serviços e produtos</p>
+                        <p class="vantagens"><span class="material-symbols-outlined">check</span>Estratégias para vender sua imagem pessoal e empresarial de forma eficaz</p>
 
 
 
@@ -250,7 +266,7 @@
                     <span class="faq-icon">+</span>
                 </div>
                 <div class="faq-answer">
-                    <p>Temos planos gratuitos e pagos para todos os tipos de público.</p>
+                    <p>Temos planos para todos os tipos de público.</p>
                 </div>
             </div>
     
