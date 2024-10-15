@@ -112,24 +112,20 @@ document.addEventListener('keydown', function (event) {
 });
  //video auto play
  document.addEventListener('DOMContentLoaded', function() {
-    const video = document.getElementById('video-player');
-    const soundMessage = document.getElementById('sound-message');
+    const youtubePlayer = document.getElementById('youtube-player');
+    const soundOverlay = document.getElementById('sound-overlay');
 
-    // Tentar autoplay quando a página carregar
-    video.play().catch(error => {
-        console.log('Autoplay falhou devido a restrições do navegador:', error);
-    });
+    // Evento de clique para ativar o som
+    soundOverlay.addEventListener('click', function() {
+        // Remover o mute do vídeo
+        youtubePlayer.src = youtubePlayer.src.replace('mute=1', 'mute=0');
 
-    // Adicionar evento de clique para ativar o som
-    video.addEventListener('click', function() {
-        // Ativar o som do vídeo
-        video.muted = false;
-        video.play();
-
-        // Remover a mensagem informativa
-        soundMessage.style.display = 'none';
+        // Remover a camada de sobreposição
+        soundOverlay.style.display = 'none';
     });
 });
+
+
 
 
 
