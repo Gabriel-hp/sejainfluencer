@@ -156,11 +156,14 @@ body, html {
     height: auto;
 }
 
-.content-video .video-player{
+.content-video .video-player {
+    margin-top: 500px;
     width: 750px;
     border-radius: 20px;
     margin-top: -20px;
 }
+
+
 .content-video{
     display: flex;
     flex-direction: column;
