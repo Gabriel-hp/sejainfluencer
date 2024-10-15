@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comuidade Seja influencer</title>
     <link rel="stylesheet" href="style.css">
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -19,6 +21,7 @@
     </div>
 
     <section class="home">
+        <div class="bg-no-response"></div>
         <section class="hero-section">
             <div class="hero-overlay wow animate__animated animate__fadeIn" data-wow-duration="2s"></div>
             <div class="hero-content">
@@ -36,20 +39,25 @@
                        <a href="https://wa.me/5592981339133?text=Olá%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20comunidade%20seja%20influencer." target="_blank"> <button class="secondary-btn">Fale conosco no WhatsApp</button></a>
                     </div>
                 </div>
-                <div class="hero-character" >
-                    <img src="./img/inflieneee.png" alt="Imagem do Influencer">
+                <div class="hero-character">
+                    <img src="./img/inflieneee.webp" alt="Imagem do Influencer" class="img-normal">
+                    <img src="./img/influencer-responsivo.png" alt="Imagem recortada do Influencer" class="img-responsive">
                 </div>
+                
+            
             </div>
-        </section>
-    </section>
-    
-    
-        
 
-    <section class="video">
+        </section>
+    
+    </section>
+
+    <section id="video-section" class="video">
         <div class="content-video" style="position: relative; margin-top: 50px;">
             <!-- Placeholder do vídeo -->
-          
+            <video id="video-player" class="video-player wow animate__animated animate__fadeIn" data-wow-duration="2s" width="100%" height="450">
+                <source src="video/o-um-video-horizontal_bMbjMNmq.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
     
             <div class="promo-banner">
                 <div class="promo-content">
@@ -61,6 +69,9 @@
             <button class="primary-btn">Tenha acesso à comunidade</button>
         </div>
     </section>
+    
+    
+
 
     <section>
         <div class="container">
@@ -87,23 +98,20 @@
     <section class="section-2">
         <div>
             <div class="content-2">
-                <section id="carousel-section">
-    <div class="carousel-container">
-        <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
-
-        <div class="carousel-slide">
-            <img src="./img/carrosel/aula-para-influenciadoras-manaus.webp" alt="Grupo de pessoas influenciadoras">
-            <img src="./img/carrosel/grupo-influencer-manaus.webp" alt="Influencer 1">
-            <img src="./img/carrosel/grupo-influenciadorassss.webp" alt="Influencer 2">
-            <img src="./img/carrosel/grupo-pessoa-influenciadora-manaus.webp" alt="Influencer 3">
-            <img src="./img/carrosel/influenciadora-manaus.webp" alt="Influencer 4">
-            <img src="./img/carrosel/seja-influencer.webp" alt="Influencer 5">
-        </div>
-
-        <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
-    </div>
-</section>
-
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                    
+                    <div class="carousel-slide">
+                        <img src="./img/carrosel/aula-para-influenciadoras-manaus.png" alt="Grupo de pessoas influenciadoras">
+                        <img src="./img/carrosel/grupo-influencer-manaus.png" alt="Influencer 1">
+                        <img src="./img/carrosel/grupo-influenciadorassss.png" alt="Influencer 2">
+                        <img src="./img/carrosel/grupo-pessoa-influenciadora-manaus.png" alt="Influencer 3">
+                        <img src="./img/carrosel/influenciadora-manaus.png" alt="Influencer 4">
+                        <img src="./img/carrosel/seja-influencer.png" alt="Influencer 5">
+                    </div>
+                
+                    <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
                 
                 
                 <div class="text-content-2 wow animate__animated animate__fadeInRight" data-wow-delay="0.5s" data-wow-duration="2s">
@@ -117,7 +125,7 @@
                         <li>Encontros, Eventos de celebração, Competições e muitos prêmios</li>
                     </ul>
                    <a href="#" target="_blank">
-                    <button class="primary-btn">Tenha acesso agora</button>
+                    <button class="primary-btn wow animate__animated animate__pulse" data-wow-delay="0.7s" data-wow-duration="2s">Tenha acesso agora</button>
                    </a>
                 </div>
             </div>
@@ -141,25 +149,25 @@
     
                 <!-- Feedback Items com lightbox -->
                 <div class="feedback-item">
-                    <img src="./img/feedback/1.webp" alt="Feedback 1" onclick="openLightbox(this.src)">
+                    <img src="./img/feedback/1.png" alt="Feedback 1" onclick="openLightbox(this.src)">
                 </div>
                 <div class="feedback-item">
-                    <img src="./img/feedback/2.webp" alt="Feedback 2" onclick="openLightbox(this.src)">
+                    <img src="./img/feedback/2.jpeg" alt="Feedback 2" onclick="openLightbox(this.src)">
                 </div>
                 <div class="feedback-item">
-                    <img src="./img/feedback/3.webp" alt="Feedback 3" onclick="openLightbox(this.src)">
+                    <img src="./img/feedback/3.png" alt="Feedback 3" onclick="openLightbox(this.src)">
                 </div>
                 <div class="feedback-item">
-                    <img src="./img/feedback/4.webp" alt="Feedback 4" onclick="openLightbox(this.src)">
+                    <img src="./img/feedback/4.png" alt="Feedback 4" onclick="openLightbox(this.src)">
                 </div>
                 <div class="feedback-item">
-                    <img src="./img/feedback/5.webp" alt="Feedback 5" onclick="openLightbox(this.src)">
+                    <img src="./img/feedback/5.png" alt="Feedback 5" onclick="openLightbox(this.src)">
                 </div>
                 <div class="feedback-item">
-                    <img src="./img/feedback/6.webp" alt="Feedback 6" onclick="openLightbox(this.src)">
+                    <img src="./img/feedback/6.png" alt="Feedback 6" onclick="openLightbox(this.src)">
                 </div>
                 <div class="feedback-item">
-                    <img src="./img/feedback/7.webp" alt="Feedback 7" onclick="openLightbox(this.src)">
+                    <img src="./img/feedback/7.png" alt="Feedback 7" onclick="openLightbox(this.src)">
                 </div>
     
             </div>
@@ -180,7 +188,7 @@
             <div class="content-pri">
                 
                 <div class="content-planos">
-                    <div class="pricing-card">
+                    <div class="pricing-card wow animate__animated animate__zoomIn" data-wow-delay="0.6s" data-wow-duration="2s">
                         <h2 class="plan-title">Comunidade de influencer</h2>
                         <p class="price-old">DE <span class="strikethrough">R$83,79</span></p>
                         <p class="price-new">POR <span>R$35,00</span></p>
@@ -197,7 +205,7 @@
                 </div>
                 
                 <div class="content-planos">
-                    <div class="pricing-card">
+                    <div class="pricing-card wow animate__animated animate__zoomIn" data-wow-delay="0.3s" data-wow-duration="2s">
                         <h2 class="plan-title">Curso Seja influencer</h2>
                         <p class="price-old">DE <span class="strikethrough">R$500,00 </span>por</p>
                         <p class="price-new">10x<span> de 19,00</span></p>
@@ -285,6 +293,14 @@
 
     <script src="script.js"></script>
    
+<!-- WOW.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+
+</script>
+<script>
+    new WOW().init();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
 </body>
 </html>
