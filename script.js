@@ -10,3 +10,37 @@ document.addEventListener('DOMContentLoaded', function() {
         videoPlaceholder.style.display = 'none';
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const carouselSection = document.getElementById('carousel-section');
+    const carouselSlide = document.querySelector('.carousel-slide');
+    let autoPlayInterval;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Inicia o carrossel quando a seção estiver visível
+                startCarousel();
+            } else {
+                // Pausa o carrossel quando a seção sair da vista
+                stopCarousel();
+            }
+        });
+    }, { threshold: 0.5 }); // Ativa quando 50% da seção estiver visível
+
+    observer.observe(carouselSection);
+
+    function startCarousel() {
+        autoPlayInterval = setInterval(() => {
+            moveSlide(1);
+        }, 3000); // Muda a imagem a cada 3 segundos
+    }
+
+    function stopCarousel() {
+        clearInterval(autoPlayInterval);
+    }
+
+    function moveSlide(direction) {
+        const slideWidth = carouselSlide.clientWidth;
+        carouselSlide.scrollLeft += direction * slideWidth;
+    }
+});
