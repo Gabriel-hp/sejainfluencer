@@ -16,6 +16,7 @@ body, html {
 
 }
 .limited-offer-header {
+ 
     background-color: #000000; 
     color: #ffffff; 
     padding: 15px 20px;
@@ -36,6 +37,7 @@ body, html {
 
 /* Configurações da seção principal */
 .hero-section {
+    margin-top: 40px;
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -171,6 +173,23 @@ body, html {
     flex-direction: column;
     align-items: center;
 }
+
+.sound-message {
+    font-size: 18px;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
 .promo-banner {
 
     text-align: center;
@@ -219,7 +238,6 @@ body, html {
     z-index: 2; 
     color: white; 
     text-align: center;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -471,7 +489,7 @@ section .promocao{
     border: 1px solid #00ff99; /* Borda verde */
     border-radius: 20px;
     width: 300px;
-    height: 480px;
+    height: auto;
     padding: 20px;
     text-align: center;
     cursor: pointer;
@@ -694,7 +712,7 @@ section .faq{
 
     .text-content p {
         font-size: 18px; 
-        width: 500px;
+
     }
 
     
@@ -780,69 +798,22 @@ section .faq{
 
 }
 
-@media screen and (max-width: 390px){
 
-
-      /*responsividade banner*/
-        /*banner principal*/
-        .hero-section{
-            height: 90vh;
-        }
-
-        .hero-character img{
-            right: -40%;
-            width: 140vw; 
-            top: 70%;
-            opacity: 0.9;
-            }
-
-        .text-container h1 {
-            font-size: 20px; 
-            margin-top: 50px;
-            width: 100px;
-        }
-    
-        .text-container p {
-            font-size: 15px; 
-            width: 100px;
-        }
-    
-        .buttons {
-            margin-top: 10px; 
-        }
-    
-        .primary-btn, .secondary-btn {
-            padding: 10px 25px; 
-            font-size: 15px; 
-        }
-
-        .primary-btn {
-            padding: 5px 100px; 
-            font-size: 15px;
-
-        }
-
-        .video {
-            height: auto;
-        }
-
-
-        .carousel-container {
-            max-width: 350px;
-            margin: auto;
-        }
-
-        .feedback{
-            height: auto;
-        }
-
-
-
-
-}
 
 /*responsividade para celular*/
 @media screen and (max-width: 480px) {
+
+
+
+    .limited-offer-header {
+        padding: 8px 8px;
+    
+        width: 100%;
+    }
+    .limited-offer-header p{
+        font-size: 12px;
+        width: 380px;   
+    }
     /*responsividade banner*/
         /*banner principal*/
 
@@ -1008,4 +979,115 @@ section .faq{
         font-size: 14px;
         margin-left: 10px;
     }
+
+    
+    .content{
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .text-content p {
+        font-size: 18px; 
+        margin: 0 auto;
+    }
+
+    .feedback{
+        height: auto;
+    }
+        /*responsividade faq*/
+    .faq-section {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 390px){
+
+    .limited-offer-header {
+        padding: 8px 8px;
+    
+        width: 100%;
+    }
+    .limited-offer-header p{
+        font-size: 12px;
+        width: 350px;   
+    }
+
+      /*responsividade banner*/
+        /*banner principal*/
+        .hero-section{
+            height: 90vh;
+        }
+
+        .hero-character img{
+            right: -40%;
+            width: 140vw; 
+            top: 70%;
+            opacity: 0.9;
+            }
+
+        .text-container h1 {
+            font-size: 30px; 
+            margin-top: 50px;
+            width: 300px;
+        }
+    
+        .text-container p {
+            font-size: 18px; 
+            width: 250px;
+        }
+    
+        .buttons {
+            margin-top: 10px; 
+        }
+    
+         .secondary-btn {
+            padding: 10px 15px; 
+            font-size: 15px; 
+        }
+
+        .primary-btn {
+            padding: 10px 10px; 
+            font-size: 15px;
+
+        }
+
+        .text-top{
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .video {
+            height: auto;
+        }
+
+        .content{
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+    
+        .text-content p {
+            font-size: 18px; 
+            margin: 0 auto;
+
+        }
+
+
+        .carousel-container {
+            max-width: 350px;
+            margin: auto;
+        }
+
+        .feedback{
+            height: auto;
+        }
+            /*responsividade faq*/
+        .faq-section {
+            width: 90%;
+            padding: 10px;
+        }
+
+
 }
