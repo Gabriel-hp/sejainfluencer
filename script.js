@@ -119,8 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Tentar carregar e iniciar o vídeo quando a seção estiver visível
-                video.load(); // Carrega o vídeo
+                // Iniciar o vídeo com som e loop ao tornar a seção visível
                 video.play().catch(error => {
                     console.log('Autoplay falhou devido a restrições do navegador:', error);
                 });
@@ -132,6 +131,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }, { threshold: 0.5 }); // Ativa quando 50% da seção estiver visível
 
     observer.observe(videoSection);
-
-    // Removendo o evento de clique para ativar o som, pois o vídeo já está configurado para tocar com som
 });
+
