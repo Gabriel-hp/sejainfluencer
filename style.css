@@ -1072,15 +1072,22 @@ section .faq{
         }
     
         .text-content p {
-            font-size: 18px; 
+            font-size: 14px; 
             margin: 0 auto;
 
         }
 
 
         .carousel-container {
-            max-width: 350px;
+            max-width: 310px;
             margin: auto;
+        }
+
+        .pricing-card {
+            width: 250px;
+            height: auto;
+
+
         }
 
         .feedback{
