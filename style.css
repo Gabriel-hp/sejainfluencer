@@ -621,7 +621,7 @@ section .faq{
 @media screen and (max-width: 988px) {
 
     .bg-no-response{
-        background: url('./img/bg/seja-influencer-responsivo-banner.png') no-repeat center center;
+        display: none;
         background-size: cover;
         display: flex;
         width: 100%;
@@ -810,7 +810,7 @@ section .faq{
         text-align: center;
     }
     .bg-no-response{
-        background: url('./img/bg/seja-influencer-responsivo-banner.png') no-repeat center center;
+        display: none;
         background-size: cover;
         display: flex;
         width: 100%;
@@ -827,7 +827,7 @@ section .faq{
 
 
     .bg-no-response{
-        background: url('./img/bg/seja-influencer-responsivo-banner.png') no-repeat center center;
+        display: none;
         background-size: cover;
         display: flex;
         width: 100%;
@@ -1042,7 +1042,7 @@ section .faq{
 @media screen and (max-width: 390px){
 
     .bg-no-response{
-        background: url('./img/bg/seja-influencer-responsivo-banner.png') no-repeat center center;
+        display: none;
         background-size: cover;
         display: flex;
         width: 100%;
