@@ -110,5 +110,26 @@ document.addEventListener('keydown', function (event) {
         closeLightbox();
     }
 });
+ //video auto play
+ document.addEventListener('DOMContentLoaded', function() {
+    const video = document.getElementById('video-player');
+    const soundMessage = document.getElementById('sound-message');
+
+    // Tentar autoplay quando a página carregar
+    video.play().catch(error => {
+        console.log('Autoplay falhou devido a restrições do navegador:', error);
+    });
+
+    // Adicionar evento de clique para ativar o som
+    video.addEventListener('click', function() {
+        // Ativar o som do vídeo
+        video.muted = false;
+        video.play();
+
+        // Remover a mensagem informativa
+        soundMessage.style.display = 'none';
+    });
+});
+
 
 
