@@ -46,7 +46,7 @@ function autoSlide() {
 // Reinicia o intervalo para que o carrossel continue automaticamente após uma interação manual
 function resetAutoSlide() {
     clearInterval(autoSlideInterval);
-    autoSlideInterval = setInterval(autoSlide, 5000); // Avança automaticamente a cada 3 segundos
+    autoSlideInterval = setInterval(autoSlide, 4000); // Avança automaticamente a cada 3 segundos
 }
 
 // Inicia o carrossel automático quando a página carregar

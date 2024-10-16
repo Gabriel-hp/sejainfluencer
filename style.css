@@ -1,33 +1,41 @@
 /* styles.css */
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-image: linear-gradient(to right top, #0d0f0e, #0c0f0d, #0b0f0d, #0a0e0c, #090e0c, #090e0d, #090d0d, #090d0d, #0a0d0e, #0c0d0e, #0d0d0d, #0d0d0d);
-    background-size: cover; /* Faz o background ocupar toda a tela */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
-    color: #ffffff; /* Cor do texto */
-    display: block; /* Corrigir de flex para block */
-    overflow-x: hidden; /* Para evitar rolagem */
+    background-size: cover;
+    /* Faz o background ocupar toda a tela */
+    background-repeat: no-repeat;
+    /* Evita que a imagem se repita */
+    color: #ffffff;
+    /* Cor do texto */
+    display: block;
+    /* Corrigir de flex para block */
+    overflow-x: hidden;
+    /* Para evitar rolagem */
 }
-*{
+
+* {
     font-family: "Inter", sans-serif;
     text-decoration: none;
 
 }
+
 .limited-offer-header {
- 
-    background-color: #000000; 
-    color: #ffffff; 
+
+    background-color: #000000;
+    color: #ffffff;
     padding: 15px 20px;
     font-family: Arial, sans-serif;
     font-size: 16px;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     text-align: center;
     width: 100%;
-    position: fixed; 
+    position: fixed;
     z-index: 100;
     border-bottom: #00cc7a solid 1px;
 }
@@ -48,7 +56,7 @@ body, html {
     display: flex;
 }
 
-.bg-no-response{
+.bg-no-response {
     background-image: url(/img/bg/bg-seja-influenceraa.webp);
     background-size: cover;
     display: flex;
@@ -66,7 +74,8 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Transparência para melhorar legibilidade */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Transparência para melhorar legibilidade */
     z-index: 1;
 }
 
@@ -81,14 +90,21 @@ body, html {
     align-items: center;
     padding: 20px;
 }
+
 .hero-character img {
     position: absolute;
-    width: 25vw; /* Tamanho da imagem ajustado de forma responsiva */
-    left: 100%; /* Centraliza horizontalmente */
-    top: 62%; /* Centraliza verticalmente */
-    transform: translate(-50%, -50%); /* Ajusta a posição para ficar centralizado */
-    z-index: 2; /* Garante que a imagem esteja acima de outros elementos */
+    width: 25vw;
+    /* Tamanho da imagem ajustado de forma responsiva */
+    left: 100%;
+    /* Centraliza horizontalmente */
+    top: 62%;
+    /* Centraliza verticalmente */
+    transform: translate(-50%, -50%);
+    /* Ajusta a posição para ficar centralizado */
+    z-index: 2;
+    /* Garante que a imagem esteja acima de outros elementos */
 }
+
 .img-responsive {
     display: none;
 }
@@ -96,13 +112,13 @@ body, html {
 
 .text-container {
     max-width: 50%;
-    
+
 }
 
 .text-container h1 {
     font-size: 60px;
     margin: 0;
-    font-weight:700;
+    font-weight: 700;
 }
 
 .text-container p {
@@ -116,7 +132,8 @@ body, html {
     margin-top: 20px;
 }
 
-.primary-btn, .secondary-btn {
+.primary-btn,
+.secondary-btn {
     padding: 15px 35px;
     margin: 5px;
     font-size: 20px;
@@ -127,13 +144,16 @@ body, html {
 }
 
 .primary-btn {
-    background-color: #3DEEA1; /* Cor verde do botão */
+    background-color: #3DEEA1;
+    /* Cor verde do botão */
     color: #2B2B2B;
     font-weight: bold;
     transition: .5s;
 }
+
 .primary-btn:hover {
-    background-color: #26bd7c; /* Cor verde do botão */
+    background-color: #26bd7c;
+    /* Cor verde do botão */
     box-shadow: 0 0 20px rgba(27, 223, 37, 0.7);
 }
 
@@ -144,17 +164,21 @@ body, html {
     transition: .5s;
 
 }
-.secondary-btn a{
+
+.secondary-btn a {
     color: #ffffff;
 }
+
 .secondary-btn:hover {
     background-color: #fff;
     color: #2B2B2B;
     border: 2px solid #fff;
 }
-.secondary-btn a:hover{
+
+.secondary-btn a:hover {
     color: #2B2B2B;
 }
+
 .hero-character {
     max-width: 30%;
 }
@@ -165,7 +189,7 @@ body, html {
 }
 
 
-.section video{
+.section video {
     width: 100%;
     height: auto;
 }
@@ -178,14 +202,14 @@ body, html {
 }
 
 
-.content-video{
+.content-video {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-.video{
+.video {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -204,72 +228,86 @@ body, html {
 }
 
 .old-price2 {
-    color: red; /* Cor da antiga */
-    font-size: 20px; /* Tamanho da fonte da antiga */
-    text-decoration: line-through; /* Riscar a antiga */
+    color: red;
+    /* Cor da antiga */
+    font-size: 20px;
+    /* Tamanho da fonte da antiga */
+    text-decoration: line-through;
+    /* Riscar a antiga */
 }
 
 .new-price2 {
-    color: #00cc7a; /* Cor do texto da nova */
-    font-size: 30px; /* Tamanho da fonte da nova */
+    color: #00cc7a;
+    /* Cor do texto da nova */
+    font-size: 30px;
+    /* Tamanho da fonte da nova */
     margin-top: -20px;
 }
 
 
-.primary-btn-video{
+.primary-btn-video {
     padding: 15px 35px;
     margin: 5px;
     font-size: 20px;
     cursor: pointer;
     border: none;
     border-radius: 10px;
-        background-color: #3DEEA1; /* Cor verde do botão */
-        color: #2B2B2B;
-        font-weight: bold;
-        transition: .5s;
-        margin-bottom: 50px;
-    }
-    .primary-btn-video:hover {
-        background-color: #26bd7c; /* Cor verde do botão */
-        box-shadow: 0 0 20px rgba(27, 223, 37, 0.7);
-    }
+    background-color: #3DEEA1;
+    /* Cor verde do botão */
+    color: #2B2B2B;
+    font-weight: bold;
+    transition: .5s;
+    margin-bottom: 50px;
+}
+
+.primary-btn-video:hover {
+    background-color: #26bd7c;
+    /* Cor verde do botão */
+    box-shadow: 0 0 20px rgba(27, 223, 37, 0.7);
+}
 
 /*emocional*/
 /* Seção container */
-.container{
+.container {
     position: relative;
-    z-index: 2; 
-    color: white; 
+    z-index: 2;
+    color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.container{
-    position: relative; 
-    width: 100%; 
-    height: auto; 
-    overflow: hidden; 
-    z-index: 2; /* Definindo um nível superior ao pseudo-elemento */
+
+.container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    z-index: 2;
+    /* Definindo um nível superior ao pseudo-elemento */
 }
 
 .container::before {
+    background-image: url(/img/bg/bg-influencer-manaus.webp);
+    background-size: cover;
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-        opacity: 0.2; 
-    z-index: 1; 
+    opacity: 0.2;
+    z-index: 1;
 }
 
-.text-top, .text-bottom {
+.text-top,
+.text-bottom {
     font-size: 25px;
 }
 
-.text-top p, .text-bottom p {
+.text-top p,
+.text-bottom p {
     font-size: 1.2em;
     line-height: 1.5;
 }
@@ -289,7 +327,8 @@ body, html {
 
 
 .highlight {
-    color: #00ff99; /* Cor do texto destacado */
+    color: #00ff99;
+    /* Cor do texto destacado */
     font-weight: bold;
 }
 
@@ -300,9 +339,9 @@ body, html {
 /* Seção feedback */
 
 
-.container-feedback{
+.container-feedback {
     position: relative;
-    color: white; 
+    color: white;
     text-align: center;
     padding: 20px;
     display: flex;
@@ -315,13 +354,15 @@ body, html {
 
 /* Estilos do lightbox */
 .lightbox {
-    display: none; /* Inicialmente oculto */
+    display: none;
+    /* Inicialmente oculto */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fundo semi-transparente */
     justify-content: center;
     align-items: center;
     z-index: 9999;
@@ -402,7 +443,8 @@ body, html {
 .carousel-slide img {
     width: 100%;
     height: 100%;
-    flex-shrink: 0; /* Garante que todas as imagens tenham a mesma largura */
+    flex-shrink: 0;
+    /* Garante que todas as imagens tenham a mesma largura */
 }
 
 .carousel-btn {
@@ -428,7 +470,7 @@ body, html {
 
 
 .text-content-2 {
-    width:450px;
+    width: 450px;
     color: #ffffff;
     text-align: left;
 }
@@ -439,7 +481,7 @@ body, html {
 }
 
 .text-content-2 ul {
-    list-style-type:square;
+    list-style-type: square;
     padding-left: 20px;
     margin-bottom: 20px;
 }
@@ -450,13 +492,14 @@ body, html {
 
 }
 
-.content-pri{
+.content-pri {
     display: flex;
     flex-direction: row;
     gap: 20px;
     margin: 0 auto;
 }
-section .promocao{
+
+section .promocao {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -464,7 +507,7 @@ section .promocao{
 
 }
 
-.container-promo{
+.container-promo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -487,8 +530,10 @@ section .promocao{
 }
 
 .pricing-card {
-    background-color: #26262600; /* Cor de fundo do card */
-    border: 1px solid #00ff99; /* Borda verde */
+    background-color: #26262600;
+    /* Cor de fundo do card */
+    border: 1px solid #00ff99;
+    /* Borda verde */
     border-radius: 20px;
     width: 300px;
     height: auto;
@@ -499,7 +544,7 @@ section .promocao{
     transition: .5s;
 }
 
-.pricing-card:hover{
+.pricing-card:hover {
     box-shadow: 0 0 20px rgba(0, 212, 81, 0.5);
 
 }
@@ -515,7 +560,7 @@ section .promocao{
     margin: 10px 0;
 }
 
-.vantagens{
+.vantagens {
     font-size: 0.9em;
     color: #c8f1cd;
     margin: 10px 0;
@@ -530,11 +575,13 @@ section .promocao{
     font-size: 1.8em;
     font-weight: bold;
     margin: 10px 0;
-    color: #00ff99; /* Cor do preço promocional */
+    color: #00ff99;
+    /* Cor do preço promocional */
 }
 
 .plan-button {
-    background-color: #00ff99; /* Cor de fundo do botão */
+    background-color: #00ff99;
+    /* Cor de fundo do botão */
     color: #000000;
     border: none;
     padding: 10px 15px;
@@ -546,18 +593,20 @@ section .promocao{
 }
 
 .plan-button:hover {
-    background-color: #00cc7a; /* Cor ao passar o mouse sobre o botão */
+    background-color: #00cc7a;
+    /* Cor ao passar o mouse sobre o botão */
     box-shadow: 0 0 15px rgba(0, 212, 81, 0.5);
 }
 
-section .faq{
+section .faq {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
+
 .faq-section {
     border-radius: 10px;
     padding: 20px;
@@ -599,18 +648,22 @@ section .faq{
 
 /* CSS */
 .footer {
-    background-color: #000000; /* Cor de fundo preta */
-    color: #ffffff; /* Texto branco */
-    text-align: center; /* Centraliza o texto */
-    padding: 10px 0; /* Espaçamento em cima e embaixo */
+    background-color: #000000;
+    /* Cor de fundo preta */
+    color: #ffffff;
+    /* Texto branco */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 10px 0;
+    /* Espaçamento em cima e embaixo */
     font-size: 14px;
-  
+
     width: 100%;
     bottom: 0;
 
 }
 
-.footer a{
+.footer a {
     color: white;
 }
 
@@ -621,7 +674,8 @@ section .faq{
 /* Esconde a imagem hero-character em telas menores */
 @media screen and (max-width: 988px) {
 
-    .bg-no-response{
+    .bg-no-response {
+        background: url('./img/bg/seja-influencer-responsivo-banner.webp') no-repeat center center;
         background-size: cover;
         display: flex;
         width: 100%;
@@ -633,107 +687,126 @@ section .faq{
     }
 
     /*banner primicipal*/
-    .hero-section{
+    .hero-section {
         height: 80vh;
     }
-    .hero-character img{
+
+    .hero-character img {
         right: -40%;
-        width: 100vw; 
+        width: 100vw;
         top: 105%;
-        }
+    }
 
     .text-container {
-        max-width: 100%; 
-        text-align: left; 
+        max-width: 100%;
+        text-align: left;
         z-index: 5;
     }
 
     .text-container h1 {
-        font-size: 60px; 
+        font-size: 60px;
         width: 400px;
     }
 
     .text-container p {
-        font-size: 20px; 
+        font-size: 20px;
         width: 400px;
     }
 
     .buttons {
-        margin-top: 10px; 
+        margin-top: 10px;
     }
 
-    .primary-btn, .secondary-btn {
-        padding: 5px 10px; 
-        font-size: 20px; 
+    .primary-btn,
+    .secondary-btn {
+        padding: 5px 10px;
+        font-size: 20px;
 
     }
 
     /*video*/
 
     .video {
-        padding: 10px; /* Adiciona um pouco de padding para melhorar o espaçamento em dispositivos móveis */
-        text-align: center; /* Centraliza o conteúdo para uma melhor apresentação em telas pequenas */
+        padding: 10px;
+        /* Adiciona um pouco de padding para melhorar o espaçamento em dispositivos móveis */
+        text-align: center;
+        /* Centraliza o conteúdo para uma melhor apresentação em telas pequenas */
     }
 
     .text-top p {
-        font-size: 18px; /* Reduz o tamanho da fonte para caber melhor em dispositivos móveis */
+        font-size: 18px;
+        /* Reduz o tamanho da fonte para caber melhor em dispositivos móveis */
     }
 
     .content-video {
         display: flex;
-        flex-direction: column; /* Empilha os elementos verticalmente em dispositivos móveis */
-        align-items: center; /* Centraliza os itens */
-        gap: 15px; /* Adiciona espaço entre os itens */
+        flex-direction: column;
+        /* Empilha os elementos verticalmente em dispositivos móveis */
+        align-items: center;
+        /* Centraliza os itens */
+        gap: 15px;
+        /* Adiciona espaço entre os itens */
     }
 
     .video-player {
-        width: 100%; /* Faz o vídeo ocupar toda a largura disponível */
-        height: auto; /* Mantém a proporção do vídeo */
+        width: 100%;
+        /* Faz o vídeo ocupar toda a largura disponível */
+        height: auto;
+        /* Mantém a proporção do vídeo */
     }
-    .content-video .video-player{
+
+    .content-video .video-player {
         width: 550px;
         border-radius: 20px;
     }
 
     .promo-banner {
-        margin: 10px 0; /* Adiciona margem para separar a promoção dos outros elementos */
+        margin: 10px 0;
+        /* Adiciona margem para separar a promoção dos outros elementos */
     }
 
-    .promo-content p, .promo-content h1 {
-        font-size: 16px; /* Ajusta o tamanho das fontes na promoção para se adequar a dispositivos móveis */
+    .promo-content p,
+    .promo-content h1 {
+        font-size: 16px;
+        /* Ajusta o tamanho das fontes na promoção para se adequar a dispositivos móveis */
     }
 
     .primary-btn {
-        padding: 10px 20px; /* Ajusta o padding do botão para caber melhor em telas menores */
-        font-size: 16px; /* Reduz o tamanho da fonte do botão */
+        padding: 10px 20px;
+        /* Ajusta o padding do botão para caber melhor em telas menores */
+        font-size: 16px;
+        /* Reduz o tamanho da fonte do botão */
     }
 
     /*seção emoção*/
-    .content{
+    .content {
         text-align: center;
     }
-    .text-top p, 
+
+    .text-top p,
     .text-bottom p {
-        font-size: 22px; 
-        line-height: 1.4; 
-        
+        font-size: 22px;
+        line-height: 1.4;
+
     }
-    .content{
+
+    .content {
         text-align: center;
         display: flex;
         align-items: center;
     }
 
     .text-content p {
-        font-size: 18px; 
+        font-size: 18px;
 
     }
 
-    
+
     /*logico*/
-    .section-2{
+    .section-2 {
         height: auto;
     }
+
     .content-2 {
         flex-direction: column;
         align-items: center;
@@ -759,6 +832,7 @@ section .faq{
         font-size: 16px;
         padding: 8px 20px;
     }
+
     .carousel-container {
         max-width: 550px;
         margin: auto;
@@ -767,9 +841,10 @@ section .faq{
 
     /*promoção*/
 
-    .feedback{
+    .feedback {
         height: auto;
     }
+
     .feedback-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -799,17 +874,18 @@ section .faq{
     }
 }
 
-@media screen and (max-width: 675px){
+@media screen and (max-width: 675px) {
     /*promoção*/
 
 
-    .content-pri{
+    .content-pri {
         display: flex;
         flex-direction: column;
         height: auto;
         text-align: center;
     }
-    .bg-no-response{
+
+    .bg-no-response {
         background-image: url(/img/bg/seja-influencer-responsivo-banner.webp);
         background-size: cover;
         display: flex;
@@ -822,11 +898,10 @@ section .faq{
     }
 
 }
+
 /*responsividade para celular*/
 @media screen and (max-width: 480px) {
-
-
-    .bg-no-response{
+    .bg-no-response {
         background-image: url(/img/bg/seja-influencer-responsivo-banner.webp);
         background-size: cover;
         display: flex;
@@ -837,121 +912,128 @@ section .faq{
         justify-content: center;
         z-index: 1;
     }
+
     .limited-offer-header {
         padding: 8px 8px;
-    
+
         width: 100%;
     }
-    .limited-offer-header p{
+
+    .limited-offer-header p {
         font-size: 12px;
-        width: 380px;   
+        width: 380px;
     }
+
     /*responsividade banner*/
-        /*banner principal*/
+    /*banner principal*/
 
 
-        .hero-character .img-responsive{
-            left: 70%;
-            width: 80vw; 
-            top: 70%;
-            }
-
-                /* Esconde a imagem original e mostra a recortada para telas menores */
-            .img-normal {
-                display: none;
-            }
-            .img-responsive {
-                display: block;
-                width: 10%; /* Ajuste o tamanho conforme necessário */
-            }
-
-
-    
-        .text-container {
-            max-width: 100%; 
-            text-align: left; 
-            z-index: 5;
-        }
-    
-        .text-container h1 {
-            font-size: 60px; 
-        }
-    
-        .text-container p {
-            font-size: 20px; 
-            width: 260px;
-        }
-    
-        .text-container h1 {
-            font-size: 40px; 
-        }
-    
-        .text-container p {
-            font-size: 30px; 
-            margin-top: 15px;
-        }
-    
-        .buttons {
-            margin-top: 10px; 
-        }
-    
-        .primary-btn, .secondary-btn {
-            padding: 10px 25px; 
-            font-size: 20px; 
-        }
-
-
-          /*video*/
-    .text-top p {
-        font-size: 20px; 
+    .hero-character .img-responsive {
+        left: 70%;
+        width: 80vw;
+        top: 70%;
     }
 
-    .content-video .video-player{
+    /* Esconde a imagem original e mostra a recortada para telas menores */
+    .img-normal {
+        display: none;
+    }
+
+    .img-responsive {
+        display: block;
+        width: 10%;
+        /* Ajuste o tamanho conforme necessário */
+    }
+
+
+
+    .text-container {
+        max-width: 100%;
+        text-align: left;
+        z-index: 5;
+    }
+
+    .text-container h1 {
+        font-size: 60px;
+    }
+
+    .text-container p {
+        font-size: 20px;
+        width: 260px;
+    }
+
+    .text-container h1 {
+        font-size: 40px;
+    }
+
+    .text-container p {
+        font-size: 30px;
+        margin-top: 15px;
+    }
+
+    .buttons {
+        margin-top: 10px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        padding: 10px 25px;
+        font-size: 20px;
+    }
+
+
+    /*video*/
+    .text-top p {
+        font-size: 20px;
+    }
+
+    .content-video .video-player {
         width: 350px;
         border-radius: 20px;
     }
 
-    .promo-content p, .promo-content h1 {
-        font-size: 18px; 
+    .promo-content p,
+    .promo-content h1 {
+        font-size: 18px;
     }
 
     .primary-btn {
-        padding: 10px 20px; 
-        font-size: 18px; 
+        padding: 10px 20px;
+        font-size: 18px;
     }
 
-      /*seção emoção*/
-      .text-top p, 
-      .text-bottom p {
-          font-size: 22px; 
-          line-height: 1.4; 
-          width: 310px;
-          font-weight: bold;
-          color: #c0c0c0;
-          
-          
-      }
-  
-      .text-content p {
-          font-size: 18px; 
-          line-height: 1.5; 
-          width: 310px;
-          color: #bdbdbd;
-          font-weight: bold;
-      }
+    /*seção emoção*/
+    .text-top p,
+    .text-bottom p {
+        font-size: 22px;
+        line-height: 1.4;
+        width: 310px;
+        font-weight: bold;
+        color: #c0c0c0;
 
-      .container {
+
+    }
+
+    .text-content p {
+        font-size: 18px;
+        line-height: 1.5;
+        width: 310px;
+        color: #bdbdbd;
+        font-weight: bold;
+    }
+
+    .container {
         background-image: url(./img/bg/bg-influencer-manaus.webp) left;
-         background-size: cover; 
+        background-size: cover;
     }
-  
 
-     /*logico*/
 
-     .section-2{
+    /*logico*/
+
+    .section-2 {
         display: flex;
         align-items: center;
-     }
+    }
 
     .text-content-2 {
         margin-top: 20px;
@@ -972,14 +1054,16 @@ section .faq{
         font-size: 16px;
         padding: 8px 20px;
     }
+
     .carousel-container {
         max-width: 300px;
         margin: auto;
         margin: 10px;
     }
+
     /*promoção*/
 
-    .content-pri{
+    .content-pri {
         display: flex;
         flex-direction: column;
         height: auto;
@@ -987,9 +1071,10 @@ section .faq{
 
     /*responsividade do feed back*/
 
-    .feedback{
+    .feedback {
         height: auto;
     }
+
     .feedback .text-top h1 {
         font-size: 35px;
     }
@@ -1003,7 +1088,7 @@ section .faq{
         font-size: 22px;
         padding: 8px 20px;
     }
-    
+
 
     /*responsividade faq*/
     .faq-section {
@@ -1024,31 +1109,32 @@ section .faq{
         margin-left: 10px;
     }
 
-    
-    .content{
+
+    .content {
         text-align: center;
         display: flex;
         align-items: center;
     }
 
     .text-content p {
-        font-size: 18px; 
+        font-size: 18px;
         margin: 0 auto;
     }
 
-    .feedback{
+    .feedback {
         height: auto;
     }
-        /*responsividade faq*/
+
+    /*responsividade faq*/
     .faq-section {
         width: 90%;
         padding: 10px;
     }
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 390px) {
 
-    .bg-no-response{
+    .bg-no-response {
         background-image: url(/img/bg/seja-influencer-responsivo-banner.webp);
         background-size: cover;
         display: flex;
@@ -1064,98 +1150,102 @@ section .faq{
         padding: 8px 8px;
         width: 100%;
     }
-    .limited-offer-header p{
+
+    .limited-offer-header p {
         font-size: 12px;
-        width: 350px;   
+        width: 350px;
     }
 
-      /*responsividade banner*/
-        /*banner principal*/
-        
-
-        .hero-character .img-responsive{
-            left: 70%;
-            width: 80vw; 
-            top: 70%;
-            }
-
-                /* Esconde a imagem original e mostra a recortada para telas menores */
-            .img-normal {
-                display: none;
-            }
-            .img-responsive {
-                display: block;
-                width: 10%; /* Ajuste o tamanho conforme necessário */
-            }
-
-        .text-container h1 {
-            font-size: 30px; 
-            margin-top: 50px;
-            width: 300px;
-        }
-    
-        .text-container p {
-            font-size: 18px; 
-            width: 250px;
-        }
-    
-        .buttons {
-            margin-top: 10px; 
-        }
-    
-         .secondary-btn {
-            padding: 10px 15px; 
-            font-size: 15px; 
-        }
-
-        .primary-btn {
-            padding: 10px 10px; 
-            font-size: 15px;
-
-        }
-
-        .text-top{
-            font-size: 20px;
-            text-align: center;
-        }
-
-        .video {
-            height: auto;
-        }
-
-        .content{
-            text-align: center;
-            display: flex;
-            align-items: center;
-        }
-    
-        .text-content p {
-            font-size: 14px; 
-            margin: 0 auto;
-
-        }
+    /*responsividade banner*/
+    /*banner principal*/
 
 
-        .carousel-container {
-            max-width: 310px;
-            margin: auto;
-        }
+    .hero-character .img-responsive {
+        left: 70%;
+        width: 80vw;
+        top: 70%;
+    }
 
-        .pricing-card {
-            width: 250px;
-            height: auto;
+    /* Esconde a imagem original e mostra a recortada para telas menores */
+    .img-normal {
+        display: none;
+    }
+
+    .img-responsive {
+        display: block;
+        width: 10%;
+        /* Ajuste o tamanho conforme necessário */
+    }
+
+    .text-container h1 {
+        font-size: 30px;
+        margin-top: 50px;
+        width: 300px;
+    }
+
+    .text-container p {
+        font-size: 18px;
+        width: 250px;
+    }
+
+    .buttons {
+        margin-top: 10px;
+    }
+
+    .secondary-btn {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
+    .primary-btn {
+        padding: 10px 10px;
+        font-size: 15px;
+
+    }
+
+    .text-top {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .video {
+        height: auto;
+    }
+
+    .content {
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .text-content p {
+        font-size: 14px;
+        margin: 0 auto;
+
+    }
 
 
-        }
+    .carousel-container {
+        max-width: 310px;
+        margin: auto;
+    }
 
-        .feedback{
-            height: auto;
-        }
-            /*responsividade faq*/
-        .faq-section {
-            width: 90%;
-            padding: 10px;
-        }
+    .pricing-card {
+        width: 250px;
+        height: auto;
+
+
+    }
+
+    .feedback {
+        height: auto;
+    }
+
+    /*responsividade faq*/
+    .faq-section {
+        width: 90%;
+        padding: 10px;
+    }
 
 
 }
