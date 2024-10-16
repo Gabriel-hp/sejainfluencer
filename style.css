@@ -37,6 +37,7 @@ body, html {
 
 /* Configurações da seção principal */
 .hero-section {
+
     margin-top: 40px;
     position: relative;
     width: 100vw;
@@ -48,7 +49,7 @@ body, html {
 }
 
 .bg-no-response{
-    display:none;
+    background-image: url(/img/bg/bg-seja-influenceraa.webp);
     background-size: cover;
     display: flex;
     width: 100vw;
@@ -621,7 +622,6 @@ section .faq{
 @media screen and (max-width: 988px) {
 
     .bg-no-response{
-        display: none;
         background-size: cover;
         display: flex;
         width: 100%;
@@ -810,7 +810,7 @@ section .faq{
         text-align: center;
     }
     .bg-no-response{
-        display: none;
+        background-image: url(/img/bg/seja-influencer-responsivo-banner.webp);
         background-size: cover;
         display: flex;
         width: 100%;
@@ -827,7 +827,7 @@ section .faq{
 
 
     .bg-no-response{
-        display: none;
+        background-image: url(/img/bg/seja-influencer-responsivo-banner.webp);
         background-size: cover;
         display: flex;
         width: 100%;
@@ -849,15 +849,22 @@ section .faq{
     /*responsividade banner*/
         /*banner principal*/
 
+
         .hero-character .img-responsive{
-            left: 0%;
-            width: 35vw; 
-            top: 0%;
+            left: 70%;
+            width: 80vw; 
+            top: 70%;
             }
-            /* Esconde a imagem original e mostra a recortada para telas menores */
+
+                /* Esconde a imagem original e mostra a recortada para telas menores */
             .img-normal {
                 display: none;
             }
+            .img-responsive {
+                display: block;
+                width: 10%; /* Ajuste o tamanho conforme necessário */
+            }
+
 
     
         .text-container {
@@ -934,7 +941,7 @@ section .faq{
       }
 
       .container {
-        background-image: url(./img/bg/bg-influencer-manaus.png) left;
+        background-image: url(./img/bg/bg-influencer-manaus.webp) left;
          background-size: cover; 
     }
   
@@ -1042,7 +1049,7 @@ section .faq{
 @media screen and (max-width: 390px){
 
     .bg-no-response{
-        display: none;
+        background-image: url(/img/bg/seja-influencer-responsivo-banner.webp);
         background-size: cover;
         display: flex;
         width: 100%;
@@ -1055,7 +1062,6 @@ section .faq{
 
     .limited-offer-header {
         padding: 8px 8px;
-    
         width: 100%;
     }
     .limited-offer-header p{
