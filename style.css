@@ -272,7 +272,7 @@ html {
     animation: pulsar 1.5s infinite; /* Adiciona a animação de pulsar */
     color: #2B2B2B;
     margin-bottom: 50px;
-
+    border-radius: 5px;
 }
 
 .primary-btn-video:hover {
