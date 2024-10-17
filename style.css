@@ -94,7 +94,7 @@ html {
 
 .hero-character img {
     position: absolute;
-    width: 25vw;
+    width: 5vw;
     /* Tamanho da imagem ajustado de forma responsiva */
     left: 100%;
     /* Centraliza horizontalmente */
@@ -290,13 +290,13 @@ html {
 }
 
 .container::before {
-    background-image: url(/img/bg/bg-influencer-manaus.webp);
+    background-image: url(/img/bg/banner-seja-influencer-manaus-emocional.webp) ;
     background-size: cover;
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vh;
     height: 100%;
     opacity: 0.2;
     z-index: 1;
