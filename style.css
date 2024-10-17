@@ -221,10 +221,13 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: linear-gradient(to right bottom, #00140c, #00130b, #00120b, #00100a, #000f09, #000e0a, #000e0b, #010d0b, #030d0d, #050d0e, #080d0e, #0a0d0e);
+    width: 100%;
 }
 
 
 .video {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -353,6 +356,8 @@ html {
 
 
 .container-feedback {
+    background-image: linear-gradient(to right bottom, #00140c, #00130b, #00120b, #00100a, #000f09, #000e0a, #000e0b, #010d0b, #030d0d, #050d0e, #080d0e, #0a0d0e);
+    width: 100%;
     position: relative;
     color: white;
     text-align: center;
