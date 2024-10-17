@@ -137,25 +137,39 @@ html {
 .secondary-btn {
     padding: 15px 35px;
     margin: 5px;
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
 
 }
 
 .primary-btn {
-    background-color: #3DEEA1;
-    /* Cor verde do botão */
-    color: #2B2B2B;
-    font-weight: bold;
+    background-image: linear-gradient(to right, #09a17a, #31b289, #4ac398, #60d4a7, #75e6b7, #75e6b7, #75e6b8, #75e6b8, #60d5a9, #4ac499, #31b38b, #07a27c);    color: #2B2B2B;
     transition: .5s;
+    box-shadow: 10 0 20px rgba(27, 223, 37, 0.7);
+    animation: pulsar 1.5s infinite; /* Adiciona a animação de pulsar */
+
 }
 
 .primary-btn:hover {
     background-color: #26bd7c;
     /* Cor verde do botão */
-    box-shadow: 0 0 20px rgba(27, 223, 37, 0.7);
+    box-shadow: 0 0 10px rgba(27, 223, 37, 0.7);
+}
+@keyframes pulsar {
+    0% {
+        transform: scale(1); /* Tamanho original */
+        box-shadow: 0 0 5px rgba(27, 223, 37, 0.7);
+    }
+    50% {
+        transform: scale(1.1); /* Cresce 10% */
+        box-shadow: 0 0 8px rgba(27, 223, 37, 0.9); /* Sombra mais forte */
+    }
+    100% {
+        transform: scale(1); /* Volta ao tamanho original */
+        box-shadow: 0 0 10px rgba(27, 223, 37, 0.7);
+    }
 }
 
 .secondary-btn {
@@ -259,6 +273,8 @@ html {
     font-weight: bold;
     transition: .5s;
     margin-bottom: 50px;
+    animation: pulsar 1.5s infinite; /* Adiciona a animação de pulsar */
+
 }
 
 .primary-btn-video:hover {
@@ -524,6 +540,7 @@ section .promocao {
     cursor: pointer;
     transition: background-color 0.3s;
     margin: 0 auto;
+
 }
 
 .cta-button:hover {
@@ -543,6 +560,7 @@ section .promocao {
     cursor: pointer;
     color: white;
     transition: .5s;
+    
 }
 
 .pricing-card:hover {
@@ -591,6 +609,8 @@ section .promocao {
     cursor: pointer;
     transition: background-color 0.3s;
     font-weight: bold;
+    animation: pulsar 1.5s infinite; 
+
 }
 
 .plan-button:hover {
