@@ -266,21 +266,17 @@ html {
     font-size: 20px;
     cursor: pointer;
     border: none;
-    border-radius: 10px;
-    background-color: #3DEEA1;
-    /* Cor verde do botão */
-    color: #2B2B2B;
-    font-weight: bold;
+    background-image: linear-gradient(to right, #09a17a, #31b289, #4ac398, #60d4a7, #75e6b7, #75e6b7, #75e6b8, #75e6b8, #60d5a9, #4ac499, #31b38b, #07a27c);    color: #2B2B2B;
     transition: .5s;
-    margin-bottom: 50px;
+    box-shadow: 10 0 20px rgba(27, 223, 37, 0.7);
     animation: pulsar 1.5s infinite; /* Adiciona a animação de pulsar */
+    color: #2B2B2B;
+    margin-bottom: 50px;
 
 }
 
 .primary-btn-video:hover {
     background-color: #26bd7c;
-    /* Cor verde do botão */
-    box-shadow: 0 0 20px rgba(27, 223, 37, 0.7);
 }
 
 /*emocional*/
