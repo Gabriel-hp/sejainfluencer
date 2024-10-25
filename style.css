@@ -3,7 +3,7 @@ body,
 html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+  
     background-image: linear-gradient(to right top, #0d0f0e, #0c0f0d, #0b0f0d, #0a0e0c, #090e0c, #090e0d, #090d0d, #090d0d, #0a0d0e, #0c0d0e, #0d0d0d, #0d0d0d);
     background-size: cover;
     /* Faz o background ocupar toda a tela */
@@ -29,7 +29,6 @@ html {
     background-color: #000000;
     color: #ffffff;
     padding: 10px 10px;
-    font-family: Arial, sans-serif;
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -49,7 +48,7 @@ html {
 
     margin-top: 40px;
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -61,7 +60,7 @@ html {
     background-image: url(/img/bg/bg-seja-influenceraa.webp);
     background-size: cover;
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     position: absolute;
     align-items: center;
