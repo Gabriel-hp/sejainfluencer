@@ -54,32 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
     autoSlideInterval = setInterval(autoSlide, 5000); // Avança automaticamente a cada 3 segundos
 });
 
-//contador tempo ilimitado
-function startCountdown(hours, minutes, seconds) {
-    const countdownElement = document.getElementById('time-remaining');
-    let totalSeconds = hours * 3600 + minutes * 60 + seconds;
-
-    function updateCountdown() {
-        const remainingHours = Math.floor(totalSeconds / 3600);
-        const remainingMinutes = Math.floor((totalSeconds % 3600) / 60);
-        const remainingSeconds = totalSeconds % 60;
-
-        countdownElement.textContent = `${remainingHours} horas ${remainingMinutes} minutos ${remainingSeconds} segundos`;
-
-        if (totalSeconds > 0) {
-            totalSeconds--;
-        } else {
-            clearInterval(timer);
-            countdownElement.textContent = 'Tempo Esgotado!';
-        }
-    }
-
-    updateCountdown();
-    const timer = setInterval(updateCountdown, 1000);
-}
-
-// Inicia o contador com 2 horas, 49 minutos e 0 segundos
-startCountdown(2, 49, 0);
 
 //feedback
 // Função para abrir o lightbox
